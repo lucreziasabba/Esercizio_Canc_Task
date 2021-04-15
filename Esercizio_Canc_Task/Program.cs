@@ -10,7 +10,7 @@ namespace Esercizio_Canc_Task
     class Program
     {
         static void Main(string[] args)
-        {
+        {   
             Task<int> t1 = Task.Factory.StartNew(() => StampaNumeri(true),
                 CancellationToken.None, //Se posso interrompere il Task
                 TaskCreationOptions.LongRunning, //Non permermette di avviare Task figli
